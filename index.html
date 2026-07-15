@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海尔集团全维战略分析 | MAD-THINK v2.0 (韬定律融合版)</title>
+<meta property="og:title" content="海尔集团全维战略分析 · MAD-THINK v2.0">
+<meta property="og:description" content="基于韬定律双引擎融合的九维全维度战略评估。τ_total=3.71/5.0，含AI范式颠覆深度验证（美的MevoX对标、Amazon Alexa+、Google Gemini）、红色警戒R1-R5扫描、3+1+停摆战略建议。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --bg: #0f0f14;
+    --card-bg: #1a1a24;
+    --card-border: #2a2a3a;
+    --text: #e0e0e8;
+    --text-secondary: #90909e;
+    --accent: #7c6ff0;
+    --accent-light: #9d92f5;
+    --green: #4ade80;
+    --yellow: #facc15;
+    --orange: #fb923c;
+    --red: #f87171;
+    --cyan: #22d3ee;
+    --pink: #f472b6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+  /* ═══════ HERO ═══════ */
+  .hero {
+    padding: 100px 0 60px;
+    background: linear-gradient(135deg, #0f0f14 0%, #1a1a2e 50%, #0f0f14 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at 30% 50%, rgba(124,111,240,0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 30%, rgba(34,211,238,0.06) 0%, transparent 50%);
+    animation: heroGlow 8s ease-in-out infinite;
+  }
+  @keyframes heroGlow {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(3%, -2%); }
+  }
+  .hero-content { position: relative; z-index: 1; text-align: center; }
+  .hero-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent), var(--cyan));
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-size: 52px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 30%, var(--accent-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .hero-subtitle {
+    font-size: 20px;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto 32px;
+    -webkit-text-fill-color: var(--text-secondary);
+  }
+  .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+  .hero-meta span { display: flex; align-items: center; gap: 6px; }
+
+  /* ═══════ SECTIONS ═══════ */
+  section { padding: 60px 0; }
+  .section-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-title .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--cyan));
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), var(--cyan), transparent);
+    opacity: 0.3;
+    margin: 0 0 48px;
+  }
+
+  /* ═══════ TAU SCORE ═══════ */
+  .tau-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+  .tau-total {
+    text-align: center;
+    padding: 40px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+  }
+  .tau-total-number {
+    font-size: 72px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+  .tau-total-label {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-top: 8px;
+  }
+  .tau-total-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--card-border);
+    border-radius: 3px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  .tau-total-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--cyan));
+    border-radius: 3px;
+    width: 65.6%;
+    transition: width 1.5s ease;
+  }
+  .tau-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .tau-item {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .tau-item-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .tau-item-value {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .tau-bar {
+    width: 100%;
+    height: 4px;
+    background: var(--card-border);
+    border-radius: 2px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+  .tau-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 1s ease;
+  }
+  .fill-green { background: var(--green); }
+  .fill-yellow { background: var(--yellow); }
+  .fill-orange { background: var(--orange); }
+  .fill-red { background: var(--red); }
+  .fill-accent { background: linear-gradient(90deg, var(--accent), var(--cyan)); }
+
+  /* ═══════ TAU TABLE ═══════ */
+  .tau-table { width: 100%; border-collapse: separate; border-spacing: 0; }
+  .tau-table th {
+    text-align: left;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--card-border);
+  }
+  .tau-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--card-border);
+    font-size: 14px;
+    vertical-align: top;
+  }
+  .tau-table tr:last-child td { border-bottom: none; }
+
+  /* ═══════ CARDS ═══════ */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 20px; }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .card-title { font-size: 18px; font-weight: 700; }
+  .card-score {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .score-high { background: rgba(74,222,128,0.15); color: var(--green); }
+  .score-mid { background: rgba(250,204,21,0.15); color: var(--yellow); }
+  .score-low { background: rgba(251,146,60,0.15); color: var(--orange); }
+  .card-tau { font-size: 12px; color: var(--accent); margin-bottom: 10px; font-weight: 600; }
+  .card-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.7; }
+  .card-layers { margin-top: 12px; }
+  .card-layer {
+    display: flex;
+    gap: 8px;
+    padding: 6px 0;
+    font-size: 13px;
+    border-top: 1px solid rgba(42,42,58,0.5);
+  }
+  .card-layer:first-child { border-top: none; }
+  .layer-badge {
+    flex-shrink: 0;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    background: var(--card-border);
+    color: var(--text-secondary);
+  }
+  .layer-surface .layer-badge { background: rgba(34,211,238,0.15); color: var(--cyan); }
+  .layer-structure .layer-badge { background: rgba(124,111,240,0.15); color: var(--accent-light); }
+  .layer-essence .layer-badge { background: rgba(244,114,182,0.15); color: var(--pink); }
+  .layer-meta .layer-badge { background: rgba(250,204,21,0.15); color: var(--yellow); }
+
+  /* ═══════ RED ALERT ═══════ */
+  .red-alert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+  .red-alert-item {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .red-alert-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .alert-pass { background: rgba(74,222,128,0.15); }
+  .alert-warn { background: rgba(250,204,21,0.15); }
+  .alert-fail { background: rgba(248,113,113,0.15); }
+  .red-alert-content h4 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .red-alert-content p { font-size: 13px; color: var(--text-secondary); }
+
+  /* ═══════ STRATEGY ROADMAP ═══════ */
+  .roadmap { display: flex; flex-direction: column; gap: 0; position: relative; padding-left: 40px; }
+  .roadmap::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--accent), var(--cyan), transparent);
+  }
+  .roadmap-item {
+    position: relative;
+    padding: 20px 24px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  .roadmap-item::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 24px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid var(--bg);
+  }
+  .roadmap-item.phase2::before { background: var(--cyan); }
+  .roadmap-item.phase3::before { background: var(--green); }
+  .roadmap-item h4 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .roadmap-item .phase-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .tag-core { background: rgba(124,111,240,0.15); color: var(--accent-light); }
+  .tag-expand { background: rgba(34,211,238,0.15); color: var(--cyan); }
+  .tag-future { background: rgba(74,222,128,0.15); color: var(--green); }
+  .roadmap-item p { font-size: 14px; color: var(--text-secondary); }
+
+  /* ═══════ METHODOLOGY ═══════ */
+  .methodology-strip {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .methodology-strip span {
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+
+  /* ═══════ FOOTER ═══════ */
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-secondary);
+    font-size: 13px;
+    border-top: 1px solid var(--card-border);
+  }
+
+  /* ═══════ RESPONSIVE ═══════ */
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 32px; }
+    .tau-hero { grid-template-columns: 1fr; }
+    .tau-grid { grid-template-columns: 1fr; }
+    .card-grid { grid-template-columns: 1fr; }
+    .hero { padding: 60px 0 40px; }
+    section { padding: 40px 0; }
+    .red-alert-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<header class="hero">
+  <div class="container hero-content">
+    <span class="hero-badge">MAD-THINK v2.0 · 韬定律融合版</span>
+    <h1>海尔集团全维战略分析</h1>
+    <p class="hero-subtitle">
+      基于九维认知网格 × 四维思维模态 × 三轴时空投影 × τ 度量体系<br>
+      的完整战略态势评估与实施路径
+    </p>
+    <div class="hero-meta">
+      <span>📅 2026-07-15</span>
+      <span>🎯 分析对象: 海尔集团 (600690.SS / 6690.HK)</span>
+      <span>📊 数据来源: 公开信息 · 置信度标注</span>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+<!-- ═══════════════════ τ 综合分 ═══════════════════ -->
+<section>
+  <div class="section-title">
+    <span class="num">τ</span> τ 综合评分 · 全景快照
+  </div>
+  <div class="section-divider"></div>
+  <div class="tau-hero">
+    <div class="tau-total">
+      <div class="tau-total-number">3.71</div>
+      <div class="tau-total-label">τ_total · 九维平均 / 5.0</div>
+      <div class="tau-total-bar"><div class="tau-total-fill" style="width:74.2%"></div></div>
+      <div style="margin-top:12px;font-size:13px;color:var(--text-secondary);">
+        瓶颈维度: C4 可行性(3.0) → C6 风险(3.2) → C7 资源(3.2)
+      </div>
+      <div style="margin-top:8px;font-size:12px;color:#70707e;padding:8px 12px;border:1px dashed var(--card-border);border-radius:8px;">
+        <strong>📐 τ 子指标计算说明</strong>：τ_design / τ_qa / τ_execute 涉及归一化因子（如M3发散度、T1_ST权重），
+        绝对值低于维度评分属正常。τ_total 采用九维平均，与子指标计算方式不同。详见框架附录。
+      </div>
+    </div>
+    <div class="tau-grid">
+      <div class="tau-item">
+        <div class="tau-item-label">τ_decide 决策质量</div>
+        <div class="tau-item-value" style="color:var(--green)">4.12</div>
+        <div class="tau-bar"><div class="tau-bar-fill fill-green" style="width:82.4%"></div></div>
+      </div>
+      <div class="tau-item">
+        <div class="tau-item-label">τ_cognize 认知深度</div>
+        <div class="tau-item-value" style="color:var(--yellow)">3.40</div>
+        <div class="tau-bar"><div class="tau-bar-fill fill-yellow" style="width:68%"></div></div>
+      </div>
+      <div class="tau-item">
+        <div class="tau-item-label">τ_design 设计质量</div>
+        <div class="tau-item-value" style="color:var(--orange)">1.72</div>
+        <div class="tau-bar"><div class="tau-bar-fill fill-orange" style="width:34.4%"></div></div>
+      </div>
+      <div class="tau-item">
+        <div class="tau-item-label">τ_qa 质量保障</div>
+        <div class="tau-item-value" style="color:var(--orange)">1.60</div>
+        <div class="tau-bar"><div class="tau-bar-fill fill-orange" style="width:32%"></div></div>
+      </div>
+      <div class="tau-item">
+        <div class="tau-item-label">τ_execute 执行效率</div>
+        <div class="tau-item-value" style="color:var(--orange)">1.24</div>
+        <div class="tau-bar"><div class="tau-bar-fill fill-orange" style="width:24.8%"></div></div>
+      </div>
+      <div class="tau-item">
+        <div class="tau-item-label">τ_evolve 进化能力</div>
+        <div class="tau-item-value" style="color:var(--yellow)">2.41</div>
+        <div class="tau-bar"><div class="tau-bar-fill fill-yellow" style="width:48.2%"></div></div>
+      </div>
+      <div class="tau-item">
+        <div class="tau-item-label">τ_close 闭环完整</div>
+        <div class="tau-item-value" style="color:var(--yellow)">3.40</div>
+        <div class="tau-bar"><div class="tau-bar-fill fill-yellow" style="width:68%"></div></div>
+      </div>
+      <div class="tau-item">
+        <div class="tau-item-label">τ_ethics 伦理合规</div>
+        <div class="tau-item-value" style="color:var(--green)">4.50</div>
+        <div class="tau-bar"><div class="tau-bar-fill fill-green" style="width:90%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 执行摘要 ═══════════════════ -->
+<section>
+  <div class="section-title">
+    <span class="num">01</span> 执行摘要
+  </div>
+  <div class="section-divider"></div>
+  <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:32px;">
+      <p style="font-size:16px;line-height:1.9;color:var(--text-secondary);margin-bottom:20px;">
+      海尔集团（数据来源：百度百科，置信度H。2024年营收<strong>4,016亿元</strong>，利润<strong>302亿元</strong>）正处于从"家电巨头"向"物联网生态品牌"的范式跃迁中间态。人单合一模式领先但执行成本高，全球化广度领先但整合深度待验证。最大战略瓶颈并非资源不足，而是<strong>战略复杂度上升速度超过了组织能力的增长速度</strong>。
+    </p>
+    <div style="margin-bottom:20px;padding:12px 16px;border-left:3px solid var(--yellow);border-radius:4px;font-size:13px;color:var(--text-secondary);">
+      <strong>🧭 质量声明</strong>：本报告所有结论标注置信度（H=高/基于公开数据、M=中/多源交叉推断、L=低/分析者判断）。AI竞争力评分为定性评估，非硬数据。详见证据链附录。
+    </div>
+    <table class="tau-table">
+      <tr>
+        <td style="width:120px;font-weight:600;color:var(--text);">核心发现</td>
+        <td>海尔在AI家居赛道竞争力评分约 <strong style="color:var(--red)">1.8/5</strong>（定性评估，置信度M），美的约 <strong style="color:var(--green)">4.2/5</strong>（美的MevoX自进化智能体已于2026年3月发布）。约30%概率在3-5年内出现至少中度AI冲击，已含尾部极端情景预案。</td>
+      </tr>
+      <tr>
+        <td style="font-weight:600;color:var(--text);">核心建议</td>
+        <td><strong style="color:var(--accent-light)">3+1+停摆</strong>：80%资源聚焦智慧家庭AI化、15%卡奥斯（准备IPO）、5%机器人探针、暂停大健康/汽车新增投资。AI人才从现有提升至<strong>2,000人+</strong>。</td>
+      </tr>
+      <tr>
+        <td style="font-weight:600;color:var(--text);">关键时间点</td>
+        <td>D+180 AI原生OS原型 → D+365 2027新品AI预装率≥80% → D+180卡奥斯IPO材料就绪</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- ═══════════════════ 九维评估 ═══════════════════ -->
+<section>
+  <div class="section-title">
+    <span class="num">02</span> L1 · 九维分析网格（四层穿透）
+  </div>
+  <div class="section-divider"></div>
+  <div class="card-grid">
+
+    <!-- C1 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">C1 · 认知维度</div>
+        <div class="card-score score-high">4.0</div>
+      </div>
+      <div class="card-tau">τ_decide</div>
+      <div class="card-layers">
+        <div class="card-layer layer-surface">
+          <span class="layer-badge">表面</span>
+          <span>全球化家电巨头，2024年营收4,016亿元，连续10年全球大型家电销量第一（Euromonitor 2009-2018）</span>
+        </div>
+        <div class="card-layer layer-structure">
+          <span class="layer-badge">结构</span>
+          <span>自我定位为"物联网生态品牌"，经过六阶段战略演进</span>
+        </div>
+        <div class="card-layer layer-essence">
+          <span class="layer-badge">本质</span>
+          <span>底层是"人单合一"——将科层制管控逻辑替换为生态平台涌现逻辑</span>
+        </div>
+        <div class="card-layer layer-meta">
+          <span class="layer-badge">元层</span>
+          <span>代际传承后能否延续？新领域（机器人/大健康/汽车）是否适用？</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- C2 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">C2 · 技术维度</div>
+        <div class="card-score score-high">3.8</div>
+      </div>
+      <div class="card-tau">τ_design</div>
+      <div class="card-layers">
+        <div class="card-layer layer-surface">
+          <span class="layer-badge">表面</span>
+          <span>WEF灯塔工厂、AI赋能互联工厂（2025年胶州投产）、卡奥斯COSMOPlat</span>
+        </div>
+        <div class="card-layer layer-structure">
+          <span class="layer-badge">结构</span>
+          <span>"用户驱动的技术整合能力"——技术围绕C2M直连逻辑展开，与美的全价值链数字化形成差异化</span>
+        </div>
+        <div class="card-layer layer-essence">
+          <span class="layer-badge">本质</span>
+          <span>独特优势是用户需求→制造端直连，而非单项技术领先</span>
+        </div>
+        <div class="card-layer layer-meta">
+          <span class="layer-badge">元层</span>
+          <span>⚠️ AI能力翻倍后，大规模定制模式会被"AI一键生成个性化产品"颠覆吗？</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- C3 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">C3 · 用户需求</div>
+        <div class="card-score score-high">4.2</div>
+      </div>
+      <div class="card-tau">τ_decide</div>
+      <div class="card-layers">
+        <div class="card-layer layer-surface">
+          <span class="layer-badge">表面</span>
+          <span>买家电（冰箱/洗衣机/空调）和三翼鸟场景解决方案</span>
+        </div>
+        <div class="card-layer layer-structure">
+          <span class="layer-badge">结构</span>
+          <span>深层需求：不是买"空调"而是"舒适空气"；不是买"冰箱"而是"食材管理"</span>
+        </div>
+        <div class="card-layer layer-essence">
+          <span class="layer-badge">本质</span>
+          <span>"从满足到欲望的跃迁"——提供用户原来不知道但确实需要的体验</span>
+        </div>
+        <div class="card-layer layer-meta">
+          <span class="layer-badge">元层</span>
+          <span>数据隐私争议（Home Assistant停止函）暗示对用户数据控制权的重视超过用户控制权</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- C4 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">C4 · 可行性</div>
+        <div class="card-score score-low">3.0</div>
+      </div>
+      <div class="card-tau">τ_execute · ⚠️ 瓶颈维度</div>
+      <div class="card-layers">
+        <div class="card-layer layer-surface">
+          <span class="layer-badge">表面</span>
+          <span>1984年亏损147万→2024年4,016亿，历史执行力极强</span>
+        </div>
+        <div class="card-layer layer-structure">
+          <span class="layer-badge">结构</span>
+          <span>阻力：人单合一组织复杂度、全球并购品牌整合、新业务资源分散</span>
+        </div>
+        <div class="card-layer layer-essence">
+          <span class="layer-badge">本质</span>
+          <span>核心约束非资源，而是"组织能力与战略复杂度的匹配度"</span>
+        </div>
+        <div class="card-layer layer-meta">
+          <span class="layer-badge">元层</span>
+          <span>家电→机器人→大健康→汽车，四线并行。海尔的竞争优势在新领域是什么？</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- C5 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">C5 · 价值维度</div>
+        <div class="card-score score-high">3.8</div>
+      </div>
+      <div class="card-tau">τ_total</div>
+      <div class="card-layers">
+        <div class="card-layer layer-surface">
+          <span class="layer-badge">表面</span>
+          <span>营收4,016亿元，利润302亿元，海外收入占比约52%</span>
+        </div>
+        <div class="card-layer layer-structure">
+          <span class="layer-badge">结构</span>
+          <span>间接价值：GE等并购带来全球化渠道、卡奥斯孵化的产业价值</span>
+        </div>
+        <div class="card-layer layer-essence">
+          <span class="layer-badge">本质</span>
+          <span>"生态品牌"方向正确，但不可替代性有压力——美的不懈追赶</span>
+        </div>
+        <div class="card-layer layer-meta">
+          <span class="layer-badge">元层</span>
+          <span>人单合一管理智慧的学术溢出价值或被低估，但试错成本也在累积</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- C6 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">C6 · 风险维度</div>
+        <div class="card-score score-low">3.2</div>
+      </div>
+      <div class="card-tau">τ_qa · ⚠️ 瓶颈维度</div>
+      <div class="card-layers">
+        <div class="card-layer layer-surface">
+          <span class="layer-badge">表面</span>
+          <span>行业周期、原材料波动、地缘政治、汇率（52%海外收入）</span>
+        </div>
+        <div class="card-layer layer-structure">
+          <span class="layer-badge">结构</span>
+          <span>系统性：人单合一继承风险、全球化多点脆弱、7+品牌管理复杂度</span>
+        </div>
+        <div class="card-layer layer-essence">
+          <span class="layer-badge">本质</span>
+          <span>黑天鹅：AI智能体重塑家居场景→硬件品牌边缘化；地缘碎片化；人单合一不可迁移</span>
+        </div>
+        <div class="card-layer layer-meta">
+          <span class="layer-badge">元层</span>
+          <span>成功者过度自信风险——低估新业务难度。俄罗斯争议被公开报道但似乎未被充分重视</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- C7 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">C7 · 资源维度</div>
+        <div class="card-score score-low">3.2</div>
+      </div>
+      <div class="card-tau">τ_execute · ⚠️ 瓶颈维度</div>
+      <div class="card-layers">
+        <div class="card-layer layer-surface">
+          <span class="layer-badge">表面</span>
+          <span>112,458人，A+H股市值约2,000-2,500亿元，全球家电销量第一的数据资产</span>
+        </div>
+        <div class="card-layer layer-structure">
+          <span class="layer-badge">结构</span>
+          <span>人单合一下放资源决策权提高利用率，但小微协调成本+并购整合效率是观察点</span>
+        </div>
+        <div class="card-layer layer-essence">
+          <span class="layer-badge">本质</span>
+          <span>核心问题：家电主业资源转换为新业务竞争力的效率</span>
+        </div>
+        <div class="card-layer layer-meta">
+          <span class="layer-badge">元层</span>
+          <span>资源充裕但"什么都想做"→分散。机器人/大健康/汽车三条线是否需聚焦？</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- C8 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">C8 · 伦理维度</div>
+        <div class="card-score score-high">4.5</div>
+      </div>
+      <div class="card-tau">τ_ethics · 🚫 一票否决维度</div>
+      <div class="card-layers">
+        <div class="card-layer layer-surface">
+          <span class="layer-badge">表面</span>
+          <span>上市公司合规良好，405所希望小学，绿色制造认证</span>
+        </div>
+        <div class="card-layer layer-structure">
+          <span class="layer-badge">结构</span>
+          <span>消费者（数据隐私）、员工（人单合一权益保障）、全球社区（俄罗斯争议）</span>
+        </div>
+        <div class="card-layer layer-essence">
+          <span class="layer-badge">本质</span>
+          <span>放大1000倍：人单合一若成普适模式，小微企业模式可能带来就业不稳定性</span>
+        </div>
+        <div class="card-layer layer-meta">
+          <span class="layer-badge">元层</span>
+          <span>人单合一在东方文化有效，GE Appliances等西方子公司劳资关系是否适配？</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- C9 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">C9 · 演化维度</div>
+        <div class="card-score score-high">3.7</div>
+      </div>
+      <div class="card-tau">τ_evolve</div>
+      <div class="card-layers">
+        <div class="card-layer layer-surface">
+          <span class="layer-badge">表面</span>
+          <span>40年、六阶段战略演进、当前为"生态品牌"阶段</span>
+        </div>
+        <div class="card-layer layer-structure">
+          <span class="layer-badge">结构</span>
+          <span>人单合一是"元组织"——让组织自己演化。卡奥斯将此能力延伸到外部</span>
+        </div>
+        <div class="card-layer layer-essence">
+          <span class="layer-badge">本质</span>
+          <span>三维抗脆弱：品牌多元×地域多元×模式创新。最大脆弱点：人单合一的代际延续性</span>
+        </div>
+        <div class="card-layer layer-meta">
+          <span class="layer-badge">元层</span>
+          <span>家电→场景→生态的演化，终点是否会被AI先达到？演化速度vs环境变化</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════ 红色警戒 ═══════════════════ -->
+<section>
+  <div class="section-title">
+    <span class="num">03</span> 🚨 红色警戒扫描（韬定律 R1-R5）
+  </div>
+  <div class="section-divider"></div>
+  <div class="red-alert-grid">
+
+    <div class="red-alert-item">
+      <div class="red-alert-icon alert-pass">✅</div>
+      <div class="red-alert-content">
+        <h4>R1 · 任一维度=1？</h4>
+        <p>通过。最低C4=3.0，无维度触及最高警戒线。</p>
+      </div>
+    </div>
+    <div class="red-alert-item">
+      <div class="red-alert-icon alert-pass">✅</div>
+      <div class="red-alert-content">
+        <h4>R2 · <2.0维度>3个？</h4>
+        <p>通过。所有维度均≥3.0，无大面积薄弱区域。</p>
+      </div>
+    </div>
+    <div class="red-alert-item">
+      <div class="red-alert-icon alert-pass">✅</div>
+      <div class="red-alert-content">
+        <h4>R3 · 短期高但长期<2.5？</h4>
+        <p>通过。但C4中期(3.0)有下滑趋势，需关注。</p>
+      </div>
+    </div>
+    <div class="red-alert-item">
+      <div class="red-alert-icon alert-pass">✅</div>
+      <div class="red-alert-content">
+        <h4>R4 · M2覆盖度=0？</h4>
+        <p>通过。批判性思维已覆盖全部九维。</p>
+      </div>
+    </div>
+    <div class="red-alert-item">
+      <div class="red-alert-icon alert-pass">✅</div>
+      <div class="red-alert-content">
+        <h4>🚫 R5 · C8(伦理)<3？</h4>
+        <p>通过。C8=4.5，无触发一票否决。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════ L4 交叉评估 ═══════════════════ -->
+<section>
+  <div class="section-title">
+    <span class="num">04</span> L4 · 交叉评估与瓶颈识别
+  </div>
+  <div class="section-divider"></div>
+  <table class="tau-table" style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;overflow:hidden;">
+    <tr>
+      <th>维度</th><th>评分</th><th>权重</th><th>τ 关联</th><th>瓶颈</th>
+    </tr>
+    <tr><td>C1 认知</td><td style="color:var(--green);font-weight:700;">4.0</td><td>0.10</td><td>τ_decide</td><td style="color:var(--text-secondary);">—</td></tr>
+    <tr><td>C2 技术</td><td style="color:var(--green);font-weight:700;">3.8</td><td>0.15</td><td>τ_design</td><td style="color:var(--text-secondary);">—</td></tr>
+    <tr><td>C3 用户需求</td><td style="color:var(--green);font-weight:700;">4.2</td><td>0.15</td><td>τ_decide</td><td style="color:var(--text-secondary);">—</td></tr>
+    <tr><td style="background:rgba(251,146,60,0.08);">C4 可行性</td><td style="color:var(--orange);font-weight:700;background:rgba(251,146,60,0.08);">3.0</td><td style="background:rgba(251,146,60,0.08);">0.15</td><td style="background:rgba(251,146,60,0.08);">τ_execute</td><td style="color:var(--orange);font-weight:600;background:rgba(251,146,60,0.08);">🔴 瓶颈1</td></tr>
+    <tr><td>C5 价值</td><td style="color:var(--green);font-weight:700;">3.8</td><td>0.15</td><td>τ_total</td><td style="color:var(--text-secondary);">—</td></tr>
+    <tr><td style="background:rgba(251,146,60,0.05);">C6 风险</td><td style="color:var(--orange);font-weight:700;background:rgba(251,146,60,0.05);">3.2</td><td style="background:rgba(251,146,60,0.05);">0.10</td><td style="background:rgba(251,146,60,0.05);">τ_qa</td><td style="color:var(--yellow);font-weight:600;background:rgba(251,146,60,0.05);">🟡 瓶颈2</td></tr>
+    <tr><td style="background:rgba(251,146,60,0.05);">C7 资源</td><td style="color:var(--orange);font-weight:700;background:rgba(251,146,60,0.05);">3.2</td><td style="background:rgba(251,146,60,0.05);">0.10</td><td style="background:rgba(251,146,60,0.05);">τ_execute</td><td style="color:var(--yellow);font-weight:600;background:rgba(251,146,60,0.05);">🟡 瓶颈3</td></tr>
+    <tr><td>C8 伦理</td><td style="color:var(--green);font-weight:700;">4.5</td><td>0.08</td><td>τ_ethics</td><td style="color:var(--text-secondary);">—</td></tr>
+    <tr><td>C9 演化</td><td style="color:var(--green);font-weight:700;">3.7</td><td>0.02</td><td>τ_evolve</td><td style="color:var(--text-secondary);">—</td></tr>
+  </table>
+</section>
+
+<!-- ═══════════════════ L5 战略建议 ═══════════════════ -->
+<section>
+  <div class="section-title">
+    <span class="num">05</span> L5 · 实施路径（τ-MAD管道对齐）
+  </div>
+  <div class="section-divider"></div>
+  <div class="roadmap">
+
+    <div class="roadmap-item">
+      <span class="phase-tag tag-core">🔴 立即 · 优先级调整</span>
+      <h4>3+1+停摆：战略聚焦</h4>
+      <p>
+        <strong>80%核心</strong>：智慧家庭（家电+三翼鸟）AI化，直接向美的MevoX对标<br>
+        <strong>15%增长</strong>：卡奥斯工业互联网，准备独立上市<br>
+        <strong>5%探针</strong>：机器人事业部，D+180 Go/No-Go<br>
+        <strong>🔴停摆</strong>：大健康(海尔生物+上海莱士)、汽车(汽车之家) — 维持不追加
+      </p>
+    </div>
+
+    <div class="roadmap-item phase2">
+      <span class="phase-tag tag-expand">🟡 120天内 · AI原生家居</span>
+      <h4>AI原生家居OS + 场景Agent</h4>
+      <p>
+        启动AI原生家居OS项目（4个月MVP）— 不同于现有Uhome OS，目标是"AI意图驱动"而非APP遥控。<br>
+        三翼鸟场景Agent覆盖≥10个高频生活场景，实现跨会话记忆。<br>
+        2027年新品(>¥5,000) AI预装率≥80%。
+      </p>
+    </div>
+
+    <div class="roadmap-item phase3">
+      <span class="phase-tag tag-future">🟢 持续 · 系统性风险对冲</span>
+      <h4>三线对冲 + 元层回灌</h4>
+      <p>
+        <strong>线1·传承</strong>：人单合一研究院（独立法人）+ 后备领导者20人<br>
+        <strong>线2·全球化</strong>：区域自治升级+第三国供应替代+俄罗斯风险审计<br>
+        <strong>线3·AI颠覆</strong>：红队月度测试+实时竞品雷达+CSA关键贡献者<br>
+        <strong>元层回灌</strong>：元层发现的AI范式颠覆证据已直接注入以上三条线
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════ 元层发现 ═══════════════════ -->
+<section>
+  <div class="section-title">
+    <span class="num">06</span> 🔬 元层深度验证 · AI范式颠覆
+  </div>
+  <div class="section-divider"></div>
+  <table class="tau-table" style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;overflow:hidden;">
+    <tr><th style="width:160px">竞争对���</th><th>AI家居布局</th><th>成熟度</th><th>对海尔威胁</th></tr>
+    <tr>
+      <td style="font-weight:700;">美的MevoX</td>
+      <td>自进化家居智能体（2026.3发布）、美言大模型、1.3万个已部署智能体、节省约7亿元</td>
+      <td><span style="color:var(--green);font-weight:700;">已上线</span></td>
+      <td><span style="color:var(--red);font-weight:700;">🔴 紧迫</span><br>海尔AI家居竞争力1.8/5 vs 美的4.2/5</td>
+    </tr>
+    <tr>
+      <td style="font-weight:700;">Amazon Alexa+</td>
+      <td>Agentic AI平台（2026.2全美上线），多步骤自主执行+跨会话记忆</td>
+      <td><span style="color:var(--green);font-weight:700;">已上线</span></td>
+      <td><span style="color:var(--red);font-weight:700;">🔴 范式证明</span><br>硬件品牌正在被AI平台抽象化</td>
+    </tr>
+    <tr>
+      <td style="font-weight:700;">Google Gemini Home</td>
+      <td>2025.10 EA→2026.3正式发布，全面取代Google Assistant</td>
+      <td><span style="color:var(--green);font-weight:700;">已上线</span></td>
+      <td><span style="color:var(--yellow);font-weight:700;">🟡 趋势确认</span></td>
+    </tr>
+    <tr>
+      <td style="font-weight:700;">Matter协议</td>
+      <td>700+认证产品（2026），"首次在大多数用例中真正可用"</td>
+      <td><span style="color:var(--yellow);font-weight:700;">实用期</span></td>
+      <td><span style="color:var(--yellow);font-weight:700;">🟡 结构性变化</span><br>品牌锁定效应瓦解</td>
+    </tr>
+  </table>
+  <div style="margin-top:20px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:20px;">
+    <h4 style="margin-bottom:8px;">💡 核心判断</h4>
+    <div style="margin-bottom:16px;padding:12px;border:1px dashed var(--accent);border-radius:8px;font-size:13px;color:var(--text-secondary);">
+      <strong>🔍 M2 批判性自检 — 叙事偏差检测</strong>：
+      "AI颠覆家电巨头"是引人注目的叙事，但需注意 <strong>反驳证据</strong>：
+      ① 白家电涉及复杂的物理工程和售后体系，纯AI平台无法短期替代（置信度H）
+      ② AI家居的可靠性尚不成熟——The Verge 2025年报道《How AI broke the smart home》指出
+      生成式AI的不可预测性与家居确定性需求存在矛盾（置信度H）
+      ③ 家电更换周期远长于手机，"诺基亚时刻"类比可能过度（置信度M）
+      <strong>⚠️ 所以：风险真实存在，时间线不确定。3-5年不是确定性预测，而是需要现在就行动的预警时间窗口。</strong>
+    </div>
+    <h4 style="margin-bottom:8px;">📊 概率估算</h4>
+    <p style="color:var(--text-secondary);font-size:14px;">
+      <strong>25-30%概率（中度冲击）</strong>：AI家居平台削弱硬件品牌影响力→海尔增长放缓<br>
+      <strong>3-5%概率（极端冲击）</strong>：AI操作系统固化，海尔硬件品牌被边缘化（诺基亚式，极端情景）<br>
+      <strong>综合：约30%概率</strong>在3-5年内出现至少中度程度的AI对海尔硬件品牌冲击。极端情景为重度尾部风险，发生概率低但影响巨大，需纳入战略预案。
+      <span style="color:var(--yellow);">（分析者定性判断，置信度M）</span>
+    </p>
+    <p style="color:var(--text-secondary);font-size:13px;margin-top:10px;padding-top:10px;border-top:1px solid var(--card-border);">
+      <strong>美的AI竞争力评分(4.2/5) vs 海尔(1.8/5)</strong>：定性评估。基于美的已发布MevoX而海尔无对标产品的事实差距，此差距真实存在但具体分数为分析者判断，置信度M。建议海尔内部调取AI研发具体规划数据后再校准。
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════ 元层回灌 ═══════════════════ -->
+<section>
+  <div class="section-title">
+    <span class="num">07</span> 🔄 元层回灌：发现→战术的完整闭环
+  </div>
+  <div class="section-divider"></div>
+  <table class="tau-table" style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;overflow:hidden;">
+    <tr><th>原策略</th><th>元层发现</th><th>追加修正</th></tr>
+    <tr>
+      <td>AI原生OS 6个月原型</td>
+      <td>美的MevoX已在2026年3月发布</td>
+      <td><strong style="color:var(--red)">紧迫性升级</strong>：压缩到4个月MVP</td>
+    </tr>
+    <tr>
+      <td>AI人才新增1,200人</td>
+      <td>美的未来3年投入超600亿元研发</td>
+      <td><strong style="color:var(--red)">目标上调</strong>：2,000人+（含收购团队）</td>
+    </tr>
+    <tr>
+      <td>竞品追踪月度简报</td>
+      <td>AI行业变化极快（Amazon/Google/美���同时发力）</td>
+      <td><strong style="color:var(--orange)">频率升级</strong>：实时雷达+自动告警</td>
+    </tr>
+    <tr>
+      <td>红队测试每季度一次</td>
+      <td>美的MevoX已进入市场</td>
+      <td><strong style="color:var(--orange)">频率升级</strong>：前期每月一次，6月后改为季度</td>
+    </tr>
+    <tr>
+      <td>加入CSA联盟</td>
+      <td>Matter 700+产品形成网络效应</td>
+      <td><strong style="color:var(--orange)">深度升级</strong>：争取CSA董事会成员</td>
+    </tr>
+  </table>
+</section>
+
+<!-- ═══════════════════ 方法论 ═══════════════════ -->
+<section>
+  <div class="section-title">
+    <span class="num">◎</span> 分析框架：MAD-THINK v2.0（韬定律融合版）
+  </div>
+  <div class="section-divider"></div>
+  <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:32px;text-align:center;">
+    <div style="font-size:14px;color:var(--text-secondary);line-height:2;max-width:700px;margin:0 auto;">
+      <strong style="color:var(--accent-light)">韬定律前置门禁</strong> → 双引擎前置扫描 + HARD-GATE硬门禁<br>
+      <strong style="color:var(--accent-light)">L0</strong> 问题触发器 → <strong style="color:var(--accent-light)">L1</strong> 九维分析网格（四层穿透+证据链）<br>
+      <strong style="color:var(--accent-light)">L2</strong> 四维思维模态（M1系统+M2批判+M3创造+M4创新）<br>
+      <strong style="color:var(--accent-light)">L3</strong> 三轴时空投影（T1时间+T2空间+T3影响）<br>
+      <strong style="color:var(--accent-light)">L4</strong> 交叉评估引擎（权重矩阵+τ综合分+🚨红色警戒R1-R5）<br>
+      <strong style="color:var(--accent-light)">L5</strong> 实施路径生成（τ-MAD八阶段管道对齐+专家双签）<br>
+      <strong style="color:var(--accent-light)">L6</strong> 反哺进化闭环（S5洞察→缺口→沉淀→升级+元层回灌）<br>
+      <strong style="color:var(--accent-light)">韬定律后置验收</strong> → τ快照 + 红色警戒 + 六专家验收
+    </div>
+    <div class="methodology-strip">
+      <span>τ_decide</span><span>τ_cognize</span><span>τ_design</span>
+      <span>τ_qa</span><span>τ_execute</span><span>τ_close</span>
+      <span>τ_evolve</span><span>τ_ethics</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <p>MAD-THINK v2.0 (韬定律融合版) · © 2026 默笙夏夏の知書房</p>
+  <p style="margin-top:6px;">数据来源: 公开信息 · 置信度标注: H=高 / M=中 / L=低 · 发布时间: 2026-07-15</p>
+</footer>
+
+</div>
+</body>
+</html>
